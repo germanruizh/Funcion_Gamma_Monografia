@@ -1,0 +1,21 @@
+%Algunas aplicaciones
+%
+\chapter{Algunas aplicaciones}
+\addcontentsline{lof}{chapter}{4. Algunas aplicaciones}
+La función gamma compleja aparece en la solución de problemas matemáticos en física cuántica, atómica y nuclear. En particular, las funciones de onda radiales para estados positivos de energía en un campo coulombiano, o de Coulomb, satisfacen las ecuaciones diferenciales que involucran a la función gamma compleja de Euler, Debnath (2010). La función gamma también se encuentra en las fórmulas para la dispersión de partículas cargadas, para las fuerzas nucleares entre protones, en la fórmula de aproximación de Fermi para la probabilidad de radiación $\beta$ y en muchos otros problemas. En este capítulo se trabajan algunas aplicaciones de la función gamma en el análisis matemático y la estadística, las cuales son muy representativas y relacionan resultados muy importantes en las matemáticas como por ejemplo, la función zeta de Riemann o la derivada fraccionaria de Riemann-Liouville.
+
+\section{Teorema del binomio de Newton generalizado}
+Uno de los resultados más importantes del análisis es el teorema del binomio de Newton. Esta fórmula está definida para números enteros no negativos, pero, bajo unas condiciones específicas se puede extender a valores negativos o incluso, a números complejos. Usando la fórmula de reflexión de Euler, podemos extender el dominio de la fórmula binomial a enteros negativos. Luego, gracias al teorema de Taylor se puede extender a los números reales y complejos. Empezamos enunciando el reconocido teorema del binomio y partiendo de ahí, generalizamos este teorema para cualquier número complejo.
+
+\begin{theorem}[Teorema del binomio de Newton]
+	Sea $n \in \mathbb{Z}^+_0$ y sean $a,b \in \mathbb{C},$ entonces se cumple que $$(a+b)^n = \sum_{k = 0}^{n}\binom{n}{k}a^{n-k}\ b^k.$$
+\end{theorem}
+Ahora, mediante el uso de la función gamma, podemos encontrar una expresión generalizada del coeficiente binomial gracias a que $1/\Gamma(z)$ es una función entera. Así, para $x,y \in \mathbb{C}$ tenemos que 
+\begin{equation}
+	\binom{x}{y} = \frac{\Gamma(x+1)}{\Gamma(y+1)\ \Gamma(x-y+1)}.
+\end{equation} Si $n,k \in \mathbb{Z}^+_0,$ la expresión anterior se reduce a \[
+\binom{n}{k} = \left\{ \begin{array}{lcl}
+	\frac{n!}{k!\ (n-k)!}\hspace{0.3cm}&\textrm{si }\ 0 \leq k \leq n\\
+	0 &\text{en otro caso,}
+\end{array}\right.\] por lo que la expresión (4.1) se puede utilizar para generalizar el coeficiente binomial a valores que no sean enteros positivos. Mediante el siguiente teorema llegare
+\endinput
